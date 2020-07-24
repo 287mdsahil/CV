@@ -1,7 +1,29 @@
 \documentclass{article}
 \usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{titling}
 
-\title{Resume} 
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\Large\bfseries}
+{$\bullet$~}
+{0em}
+{}
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\bfseries\theauthor}
+\end{center}
+}
+
+
+\title{R\`esum\`e} 
 \author{Md Sahil} \date{}
 
 \begin{document}
@@ -71,6 +93,8 @@ the departmental library.
 	\item RESTful web servies using JAX-RS (Java)
 	\item Familiar with GNU/Linux 
 	\item Amazon Web Services (including DynamoDB, EC2, etc.)
+	\item Git
+	\item GIMP
 \end{itemize}
 
 
@@ -94,6 +118,5 @@ Developing the official website for Piradius Coacing Center (In Progress)\\
 	\item Linux ricing
 	\item Working out
 \end{itemize}
-
 
 \end{document}
