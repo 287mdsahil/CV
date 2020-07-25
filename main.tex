@@ -1,114 +1,98 @@
-\documentclass{article}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage[margin=.5in]{geometry}
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
 
-\titleformat{\section}
-{}
-{}
-{0.25em}
-{\huge\bfseries}[\titlerule]
+\lastupdated
 
-\titleformat{\subsection}
-{\Large\bfseries}
-{$\bullet$~}
-{0em}
-{}
-
-\renewcommand{\maketitle}{
-\begin{center}
-{\Huge\bfseries\theauthor}\\
-\vspace{0.5em}
-{\large\bfseries Email: \href{287mdsahil@gmail.com}{287mdsahil@gmail.com}}\\
-\vspace{0.5em}
-{\large\bfseries Github: \href{https://github.com/287mdsahil}{github.com/287mdsahil}}\\
-\vspace{0.5em}
-{\large\bfseries Phone no: 8167082667, 8972931876}\\
-\end{center}
+\namesection{Md}{Sahil}
+{
+	Email: \href{mailto:287mdsahil@gmail.com}{287mdsahil@gmail.com}\\
+	Github: \href{http://github.com/287mdsahil}{github.com/287mdsahil}\\
+	Phone No: 8167082667, 7908919828
 }
 
 
-\title{R\`esum\`e} 
-\author{Md Sahil} \date{}
-
-\begin{document}
-
-{\maketitle} 
+\begin{minipage}[t]{0.55\textwidth} 
 
 \section{Education} 
 
-\subsection{Bachelor of Engineering}
-2017 \- 2021(expected) || CGPA (5 semesters): 8.196\\
-Computer Science and Engineering\\
-Jadavpur University, Kolkata\\
+\subsection{BE in Computer Science and Engineering}
+\descript{2017 - 2021 (expected) | Jadavpur University, Kolkata}
+\location{CGPA (5 sems): 8.196}
+\sectionsep
 
 \subsection{AISSCE (Class 12)}
-2017 || 94.4\%\\
-D.A.V Model School, Durgapur\\
-(Physics, Chemistry, Mathematics, Computer Science, English)\\
+\descript{2017 | D.A.V Model School, Durgapur}
+\location{
+	(Physics, Chemistry, Mathematics, Computer Science, English)\\
+	Percentage: 94.4\%
+}
+\sectionsep
 
 \subsection{AISSE (Class 10)}
-2015 || CGPA 10\\
-D.A.V Public School, Dubrajpur\\
-(Science, Social Science, Foundation of I.T., Mathematics, English Comm., Bengali)\\
+\descript{2015 | D.A.V Public School, Dubrajpur}
+\location{
+	(Science, Social Science, Foundation of I.T., 
+	Mathematics, English Comm., Bengali)\\
+	CGPA: 10
+}
+\sectionsep
 
 
 \section{Work Experience}
 \subsection{Amazon Intern}
-April 2020 \- June 2020 (2 months)\\
-Amazon Virtual Internship Program
-
+\location{April 2020 \- June 2020 (2 months)}
+\descript{Amazon Virtual Internship Program}
 
 \section{Projects} 
 
 \subsection{Multi/Many Objective Optimization}
-July 2019, in progress\\
+\location{July 2019, in progress}
 Under Dr.\ Ujjwal Mallik, 
-Department of Computer Science and Engineering, 
-Jadavpur University\\
-
+Department of CSE, Jadavpur University\\
 Working on improving an algorithm called AMOSA
 (Archived Multi Objective Simulated Annealing)
+\sectionsep
 
 
 \subsection{Frame Interpolation in video}
-July 2020 , currently in early stages\\
+\location{July 2020, currently in early stages}
 Under Dr.\ Sanjay Kumar Saha,
-Department of Computer Science and Engineering
-Jadavpur University\\
-
+Department of CSE, Jadavpur University\\
 Experimenting with voxel flow methods for frame interpolation in video
+\sectionsep
 
 \subsection{Departmental Library App}
-August 2018 \- June 2019, Development Completed\\
+\location{August 2018 - June 2019, Development Completed}
 Under Dr.\ Nandini Mukhopadhyay,
-Department of Computer Science and Engineering
-Jadavpur University\\
-
+Department of CSE, Jadavpur University\\
 Developed a mobile application for students to issue books from
 the departmental library.
+\sectionsep
 
 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
 \section{Languages} 
-\begin{itemize}
-	\item C
-	\item C++
-	\item Java
-	\item Python
-	\item MySQL
-\end{itemize}
+C\\
+C++\\
+Java\\
+Python\\
+MySQL\\
 
 \section{Skills} 
-\begin{itemize}
-	\item Web Developed Basics (HTML, CSS, Js)
-	\item Frontend development using React
-	\item Qt GUI programming (c++)
-	\item RESTful web services using JAX-RS (Java)
-	\item Amazon Web Services (including DynamoDB, EC2, etc.)
-	\item Git
-	\item GIMP
-\end{itemize}
+Web Developed Basics (HTML, CSS, Js)\\
+Frontend development using React\\
+Qt GUI programming (c++)\\
+RESTful web services using JAX-RS (Java)\\
+AWS (including DynamoDB, EC2, etc.)\\
+Git\\
+GIMP\\
 
 
 
@@ -116,6 +100,7 @@ the departmental library.
 \subsection{Hult Prize Regional Summit}
 2019, Kuala Lumpur, Malaysia\\
 One of top 6 finalists
+\sectionsep
 
 
 \section{Other works} 
@@ -127,12 +112,11 @@ One of top 6 finalists
 
 
 \section{Extra Curricular}
-\begin{itemize}
-	\item Painting
-	\item Football
-	\item Playing Guitar
-	\item Linux ricing
-	\item Working out
-\end{itemize}
+Painting\\
+Football\\
+Playing Guitar\\
+Linux ricing\\
+Working out\\
 
-\end{document}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
